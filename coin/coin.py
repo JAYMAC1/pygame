@@ -20,10 +20,13 @@ def draw():
     screen.draw.text("Score: " + str(score), color="black", topleft=(10,10))
 
 def place_coin():
-    pass
+    coin.x = randint(20, (WIDTH - 20))
+    coin.y = randint(20, (HEIGHT - 20))
 
 def time_up():
     pass
 
 def update():
     pass
+
+place_coin()
