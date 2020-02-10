@@ -19,14 +19,21 @@ def draw():
     coin.draw()
     screen.draw.text("Score: " + str(score), color="black", topleft=(10,10))
 
+    if game_over:
+        screen.fill("pink")
+        screen.draw.text("Final Score: " + str(score), topleft=(10,10), fontsize=60)
+
 def place_coin():
     coin.x = randint(20, (WIDTH - 20))
     coin.y = randint(20, (HEIGHT - 20))
 
 def time_up():
-    pass
+    global game_over
+    game_over = True
 
 def update():
-    pass
-
+    if keyboard.left:
+        fox.x = fox.x -2 
+    
+clock.schedule(time_up, 7.0)
 place_coin()
