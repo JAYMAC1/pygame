@@ -33,7 +33,13 @@ def time_up():
 
 def update():
     if keyboard.left:
-        fox.x = fox.x -2 
+        fox.x = fox.x - 2
+    elif keyboard.right:
+        fox.x = fox.x + 2
+    elif keyboard.up:
+        fox.y = fox.y - 2
+    elif keyboard.down:
+        fox.y = fox.y + 2
     
 clock.schedule(time_up, 7.0)
 place_coin()
