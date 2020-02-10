@@ -32,6 +32,8 @@ def time_up():
     game_over = True
 
 def update():
+    global score
+
     if keyboard.left:
         fox.x = fox.x - 2
     elif keyboard.right:
@@ -41,5 +43,11 @@ def update():
     elif keyboard.down:
         fox.y = fox.y + 2
     
+    coin_collected = fox.colliderect(coin)
+
+    if coin_collected:
+        score = score + 10
+        place_coin()
+        
 clock.schedule(time_up, 7.0)
 place_coin()
