@@ -9,6 +9,7 @@ def draw():
     global score
     screen.clear()
     apple.draw()
+    ball.draw()
     screen.draw.text("Score: " + str(score), topleft=(10,10))
 
 def place_ball():
