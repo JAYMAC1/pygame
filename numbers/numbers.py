@@ -19,6 +19,8 @@ def draw():
     number = 1
     
     for dot in dots:
+        #print("Centre: " + str(dot.center[0]) + " " + str(dot.center[1]))
+        #print("Pos: " + str(dot.pos[0]) + " " + str(dot.pos[1]))
         screen.draw.text(str(number), (dot.pos[0], dot.pos[1] + 12))
         dot.draw()
         number = number + 1
