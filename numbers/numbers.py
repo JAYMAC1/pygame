@@ -17,6 +17,7 @@ for dot in range(0,10):
 def draw():
     screen.fill("black")
     number = 1
+    
     for dot in dots:
         screen.draw.text(str(number), (dot.pos[0], dot.pos[1] + 12))
         dot.draw()
