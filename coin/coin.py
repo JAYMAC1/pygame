@@ -1,3 +1,5 @@
+from random import randint
+
 WIDTH = 400
 HEIGHT = 400
 
@@ -16,3 +18,12 @@ def draw():
     fox.draw()
     coin.draw()
     screen.draw.text("Score: " + str(score), color="black", topleft=(10,10))
+
+def place_coin():
+    pass
+
+def time_up():
+    pass
+
+def update():
+    pass
