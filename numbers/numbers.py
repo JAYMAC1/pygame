@@ -6,7 +6,7 @@ HEIGHT = 400
 dots = []
 lines = []
 
-next_dot = 0 
+next_dot = 0
 
 for dot in range(0,10):
     actor = Actor("dot")
@@ -17,7 +17,7 @@ for dot in range(0,10):
 def draw():
     screen.fill("black")
     number = 1
-    
+
     for dot in dots:
         #print("Centre: " + str(dot.center[0]) + " " + str(dot.center[1]))
         #print("Pos: " + str(dot.pos[0]) + " " + str(dot.pos[1]))
